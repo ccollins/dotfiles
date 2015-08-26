@@ -1,8 +1,6 @@
 " -----------------------------------------------------------------------------
 " Pathogen
 " -----------------------------------------------------------------------------
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
 
 if has("autocmd")
     filetype plugin indent on
@@ -12,7 +10,6 @@ endif
 " Visual Settings
 " ------------------------------------------------------------------------------
 set t_Co=256
-colorscheme sethtrain
 
 " ------------------------------------------------------------------------------
 " General Settings
@@ -36,7 +33,6 @@ set nocompatible
 set mousehide
 set showcmd
 set statusline=%<%f\ (%{&ft})\ %-4(%m%)%=%-19(%3l,%02c%03V%)
-set statusline+=%{fugitive#statusline()}
 set noerrorbells
 set t_vb=
 set cmdheight=1
@@ -143,14 +139,6 @@ nnoremap <leader>ev :tabe $MYVIMRC<cr>
 set backspace=indent,eol,start
 
 " ------------------------------------------------------------------------------
-" Enable Rainbow parenthesis
-" ------------------------------------------------------------------------------
-au VimEnter * RainbowParenthesesToggle
-au Syntax * RainbowParenthesesLoadRound
-au Syntax * RainbowParenthesesLoadSquare
-au Syntax * RainbowParenthesesLoadBraces
-
-" ------------------------------------------------------------------------------
 " Handle hlsearch better
 " ------------------------------------------------------------------------------
 function! MapCR()
@@ -205,9 +193,6 @@ map <leader>l :set list!<cr>
 " convert horizontally split windows to vertically split
 map <leader>htv <C-W>t<C-W>H
 
-" buffer delete
-" noremap <silent> <leader>bd :bd<CR>
-source ~/.vim/bclose.vim
 
 " Ack
 nnoremap <leader>a <Esc>:Ack!
