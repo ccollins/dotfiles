@@ -15,8 +15,8 @@
       "vendor"
     ]
     themes: [
-      "unity-ui"
-      "glacier-syntax"
+      "atom-light-ui"
+      "solarized-light-syntax"
     ]
     hideGitIgnoredFiles: true
     disabledPackages: [
