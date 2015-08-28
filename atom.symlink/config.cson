@@ -18,7 +18,7 @@
       "atom-light-ui"
       "solarized-light-syntax"
     ]
-    hideGitIgnoredFiles: true
+    hideGitIgnoredFiles: false
     disabledPackages: [
       "background-tips"
       "exception-reporting"
