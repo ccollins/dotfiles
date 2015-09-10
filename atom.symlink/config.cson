@@ -3,8 +3,9 @@
     showIndentGuide: true
     fontFamily: "Menlo"
     invisibles: {}
-    fontSize: 15
     softWrapAtPreferredLineLength: true
+    fontSize: 15
+    preferredLineLength: 120
   core:
     ignoredNames: [
       ".bundle"
