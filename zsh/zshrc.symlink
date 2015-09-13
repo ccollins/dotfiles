@@ -3,6 +3,7 @@ export ZSH=$HOME/.dotfiles
 
 # your project folder that we can `c [tab]` to
 export PROJECTS=~/projects
+export GREP_OPTIONS=--color=always
 
 export RBENV_ROOT=/usr/local/var/rbenv
 
