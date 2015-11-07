@@ -5,10 +5,6 @@ export ZSH=$HOME/.dotfiles
 export PROJECTS=~/projects
 export GREP_OPTIONS=--color=always
 
-export RBENV_ROOT=/usr/local/var/rbenv
-
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-
 # Stash your environment variables in ~/.localrc. This means they'll stay out
 # of your main dotfiles repository (which may be public, like this one), but
 # you'll have access to them in your scripts.

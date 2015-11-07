@@ -3,7 +3,7 @@
 if test ! $(which rbenv)
 then
   echo "  Installing rbenv for you."
-  brew install rbenv > /tmp/rbenv-install.log
+  brew install rbenv --HEAD > /tmp/rbenv-install.log
 fi
 
 if test ! $(which ruby-build)
