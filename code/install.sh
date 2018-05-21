@@ -1,1 +1,1 @@
-ln -s $HOME/.settings.json.symlink ~/Library/Application\ Support/Code/User/settings.json
+ln -s $HOME/.settings.json ~/Library/Application\ Support/Code/User/settings.json
