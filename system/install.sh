@@ -7,3 +7,5 @@ if test ! $(which wget)
 then
     brew install wget > /tmp/wget-install.log
 fi
+
+defaults write com.apple.finder AppleShowAllFiles YES
