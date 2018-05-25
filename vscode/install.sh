@@ -18,7 +18,6 @@ James-Yu.latex-workshop
 PeterJausovec.vscode-docker
 QassimFarid.ejs-language-support
 aaronthomas.vscode-snazzy-operator
-adamvoss.yaml
 arcticicestudio.nord-visual-studio-code
 castwide.solargraph
 codezombiech.gitignore
