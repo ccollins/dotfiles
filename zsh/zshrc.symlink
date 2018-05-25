@@ -67,8 +67,6 @@ POWERLEVEL9K_VCS_GIT_HOOKS=(vcs-detect-changes git-untracked)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
-  zsh-autosuggestions
-  zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -95,3 +93,6 @@ do
 done
 
 unset config_files
+
+source /usr/local/sharezsh/oh-my-zsh.symlink/zshrc.symlinkoh-my-zsh.symlink/zshrc.symlinkzsh
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
