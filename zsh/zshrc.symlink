@@ -94,5 +94,5 @@ done
 
 unset config_files
 
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/local/sharezsh/oh-my-zsh.symlink/zshrc.symlinkoh-my-zsh.symlink/zshrc.symlinkzsh
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
