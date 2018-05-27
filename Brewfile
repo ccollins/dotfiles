@@ -1,9 +1,10 @@
 tap "codeclimate/formulae"
+tap "homebrew/cask-versions"
 tap "homebrew/core"
+tap "homebrew/cask"
 tap "homebrew/bundle"
+tap "homebrew/cask-fonts"
 tap "homebrew/services"
-tap "caskroom/fonts"
-tap "caskroom/cask"
 brew "ansible", link: false
 brew "automake"
 brew "coreutils"
@@ -29,6 +30,7 @@ brew "liblwgeom"
 brew "libmpc"
 brew "libtool"
 brew "lzlib"
+brew "mas"
 brew "memcached"
 brew "mongodb"
 brew "node"
@@ -51,6 +53,18 @@ brew "wget"
 brew "zsh"
 brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
-brew "codeclimate/formulae/codeclimate"
-cask "iterm2"
-cask "caskroom/fonts/font-hack-nerd-font"
+mas "1Password", id: 443987910
+mas "Annotate", id: 918207447
+mas "Anytune", id: 722444976
+mas "Bear", id: 1091189122
+mas "Cyberduck", id: 409222199
+mas "Divvy", id: 413857545
+mas "Kindle", id: 405399194
+mas "Logic Pro X", id: 634148309
+mas "MindNode", id: 1289197285
+mas "OmniFocus", id: 867299399
+mas "OmniGraffle", id: 1142578753
+mas "Pixelmator", id: 407963104
+mas "Trello", id: 1278508951
+mas "Tweetbot", id: 557168941
+mas "Xcode", id: 497799835
