@@ -5,6 +5,7 @@ tap "homebrew/cask"
 tap "homebrew/bundle"
 tap "homebrew/cask-fonts"
 tap "homebrew/services"
+
 brew "ansible", link: false
 brew "automake"
 brew "coreutils"
@@ -53,6 +54,26 @@ brew "wget"
 brew "zsh"
 brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
+
+cask "1password-cli"
+cask "alfred"                     
+cask "caffeine"                   
+cask "docker"
+cask "dropbox"                    
+cask "font-hack-nerd-font"        
+cask "google-chrome"  
+cask "iterm2"                     
+cask "licecap"                    
+cask "slack"                      
+cask "tower"                      
+cask "visual-studio-code"
+cask "stay"        
+cask "textexpander"               
+cask "transmit4"   
+cask "viscosity"               
+cask "wavebox"       
+cask "zoomus"
+
 mas "1Password", id: 443987910
 mas "Annotate", id: 918207447
 mas "Anytune", id: 722444976
