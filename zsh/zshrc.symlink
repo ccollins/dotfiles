@@ -2,7 +2,7 @@
 export ZSH=~/.oh-my-zsh
 export DOTFILES=~/.dotfiles
 export PROJECTS=~/projects
-export PATH=$DOTFILES/bin:$PATH
+export PATH=$DOTFILES/bin:/usr/local/opt/grep/libexec/gnubin:$PATH
 
 DEFAULT_USER=chuckcollins
 ZSH_THEME="powerlevel9k/powerlevel9k"
