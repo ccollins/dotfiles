@@ -2,6 +2,11 @@
 
 Your dotfiles are how you personalize your system. These are mine.
 
+## brew
+```
+brew bundle dump --force
+```
+
 ## install
 
 Run this:
