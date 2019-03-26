@@ -59,5 +59,11 @@
     },
     "window.zoomLevel": 0,
     "gitlens.keymap": "alternate",
-    "gitlens.historyExplorer.enabled": true,    
+    "gitlens.historyExplorer.enabled": true,
+    "explorer.confirmDragAndDrop": false,
+    "gitlens.views.fileHistory.enabled": true,
+    "gitlens.views.lineHistory.enabled": true,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    
 }

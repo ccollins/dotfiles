@@ -19,6 +19,11 @@ POWERLEVEL9K_VCS_GIT_HOOKS=(vcs-detect-changes git-untracked)
 plugins=(
   colored-man-pages
   git
+  docker
+  docker-compose
+  brew
+  osx
+  rbenv
 )
 
 source $ZSH/oh-my-zsh.sh
