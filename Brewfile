@@ -84,6 +84,7 @@ mas "MindNode", id: 1289197285
 mas "OmniFocus", id: 867299399
 mas "OmniGraffle", id: 1142578753
 mas "Pixelmator", id: 407963104
+mas "Quiver", id: 866773894
 mas "Textual 7", id: 1262957439
 mas "Trello", id: 1278508951
 mas "Tweetbot", id: 557168941
