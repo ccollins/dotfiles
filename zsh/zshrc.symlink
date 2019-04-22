@@ -7,7 +7,7 @@ export PATH=$DOTFILES/bin:/usr/local/opt/grep/libexec/gnubin:./bin:$PATH
 DEFAULT_USER=chuckcollins
 ZSH_THEME="powerlevel9k/powerlevel9k"
 POWERLEVEL9K_MODE='nerdfont-complete'
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir virtualenv vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(command_execution_time)
 POWERLEVEL9K_VCS_HIDE_TAGS=true
 POWERLEVEL9K_VCS_GIT_HOOKS=(vcs-detect-changes git-untracked)
@@ -25,6 +25,7 @@ plugins=(
   osx
   python
   rbenv
+  virtualenv
 )
 
 source $ZSH/oh-my-zsh.sh
