@@ -15,10 +15,16 @@ Config files for bootstrapping a new Mac development environment.
 | `cursor/cli-config.json` | `~/.cursor/cli-config.json` | Cursor CLI config |
 | `Brewfile` | _(used in place)_ | Homebrew formulae, casks, and Cursor extensions |
 | `apps.md` | _(reference)_ | Manually installed apps not in Homebrew |
+| `bootstrap.sh` | _(run in place)_ | Automated setup script |
 
-## Setup
+## Quick Start
 
-See [BOOTSTRAP.md](BOOTSTRAP.md) for the full setup guide.
+```bash
+git clone https://github.com/chuckcollins/dotfiles.git ~/dotfiles
+~/dotfiles/bootstrap.sh
+```
+
+The script is idempotent — safe to re-run. It handles steps 1-9 from [BOOTSTRAP.md](BOOTSTRAP.md) automatically. See that file for manual steps and the full walkthrough.
 
 ## What's excluded
 

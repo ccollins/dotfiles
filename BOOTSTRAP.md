@@ -2,13 +2,24 @@
 
 Step-by-step guide to set up a fresh Mac from this dotfiles repo. Written so Claude (or a human) can follow it end-to-end.
 
+## Quick Start
+
+The `bootstrap.sh` script automates steps 1-9 below. On a fresh Mac:
+
+```bash
+git clone https://github.com/chuckcollins/dotfiles.git ~/dotfiles
+~/dotfiles/bootstrap.sh
+```
+
+The script is idempotent — safe to re-run. After it finishes, complete the manual steps in step 10.
+
 ## Prerequisites
 
 - macOS with admin access
 - Internet connection
 - Access to 1Password for SSH keys and secrets
 
-## Steps
+## Manual Steps (Reference)
 
 ### 1. Install Homebrew
 
