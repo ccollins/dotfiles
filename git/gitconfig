@@ -1,0 +1,5 @@
+[user]
+	email = chuck.collins@gmail.com
+	name = Chuck Collins
+[init]
+	defaultBranch = main
