@@ -56,6 +56,7 @@ fi
 info "Copying Claude settings..."
 mkdir -p "$HOME/.claude"
 cp "$DOTFILES_DIR/claude/settings.json" "$HOME/.claude/settings.json"
+cp "$DOTFILES_DIR/claude/CLAUDE.md" "$HOME/.claude/CLAUDE.md"
 success "Copied Claude settings"
 
 # --- Cursor settings ---
