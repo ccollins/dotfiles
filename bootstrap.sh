@@ -30,18 +30,17 @@ else
   success "Oh My Zsh already installed"
 fi
 
-# --- Shell configs ---
-info "Copying shell configs..."
-cp "$DOTFILES_DIR/shell/zshrc" "$HOME/.zshrc"
-cp "$DOTFILES_DIR/shell/zprofile" "$HOME/.zprofile"
-success "Copied .zshrc and .zprofile"
+# --- Stow packages ---
+info "Linking dotfiles with stow..."
+if ! command -v stow &>/dev/null; then
+  warn "stow not found — install it with: brew install stow"
+  exit 1
+fi
 
-# --- Git configs ---
-info "Copying git configs..."
-cp "$DOTFILES_DIR/git/gitconfig" "$HOME/.gitconfig"
-mkdir -p "$HOME/.config/git"
-cp "$DOTFILES_DIR/git/ignore" "$HOME/.config/git/ignore"
-success "Copied .gitconfig and global gitignore"
+for package in shell git claude cursor; do
+  stow -d "$DOTFILES_DIR" -t "$HOME" --restow "$package"
+  success "Linked $package"
+done
 
 # --- asdf plugins ---
 info "Setting up asdf plugins..."
@@ -51,20 +50,6 @@ if command -v asdf &>/dev/null; then
 else
   warn "asdf not found — run 'source ~/.zprofile' then re-run this script, or install asdf plugins manually"
 fi
-
-# --- Claude settings ---
-info "Copying Claude settings..."
-mkdir -p "$HOME/.claude"
-cp "$DOTFILES_DIR/claude/settings.json" "$HOME/.claude/settings.json"
-cp "$DOTFILES_DIR/claude/CLAUDE.md" "$HOME/.claude/CLAUDE.md"
-success "Copied Claude settings"
-
-# --- Cursor settings ---
-info "Copying Cursor settings..."
-mkdir -p "$HOME/.cursor"
-cp "$DOTFILES_DIR/cursor/argv.json" "$HOME/.cursor/argv.json"
-cp "$DOTFILES_DIR/cursor/cli-config.json" "$HOME/.cursor/cli-config.json"
-success "Copied Cursor settings"
 
 # --- Done ---
 info "Bootstrap complete!"

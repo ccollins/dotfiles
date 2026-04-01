@@ -1,5 +1,6 @@
 tap "puma/puma"
 brew "asdf"
+brew "stow"
 brew "python@3.13"
 brew "awscli"
 brew "docker"
