@@ -121,3 +121,16 @@ function ensure_ssh_agent() {
 
 # Call the function to ensure SSH agent is set up
 ensure_ssh_agent
+
+# Dotfiles dirty check
+if [[ -d "$HOME/dotfiles" ]]; then
+  _dotfiles_status=$(git -C "$HOME/dotfiles" status --porcelain 2>/dev/null)
+  if [[ -n "$_dotfiles_status" ]]; then
+    printf "\033[1;33m⚠ dotfiles have uncommitted changes — cd ~/dotfiles && git status\033[0m\n"
+  fi
+  _dotfiles_unpushed=$(git -C "$HOME/dotfiles" log --oneline @{u}..HEAD 2>/dev/null)
+  if [[ -n "$_dotfiles_unpushed" ]]; then
+    printf "\033[1;33m⚠ dotfiles have unpushed commits — cd ~/dotfiles && git push\033[0m\n"
+  fi
+  unset _dotfiles_status _dotfiles_unpushed
+fi
