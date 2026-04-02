@@ -19,7 +19,7 @@ fi
 
 # --- Brew bundle ---
 info "Installing Homebrew packages..."
-brew bundle --file="$DOTFILES_DIR/Brewfile" --no-lock
+brew bundle --file="$DOTFILES_DIR/Brewfile"
 
 # --- Oh My Zsh ---
 info "Checking Oh My Zsh..."
